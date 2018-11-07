@@ -95,7 +95,7 @@ void curso::nuevocurso(curso *cur){
 	fflush(stdin);
 	getline(cin, curso_titulo);
 	
-	cout << "0. algun otro\n1. catedra" << endl;
+	cout << "0. Seminario\n1.Catedra" << endl;
 	do{
 		cout << "Eleccion ";
 		cin >> type;
@@ -149,7 +149,7 @@ void curso::nuevocurso(curso *cur){
 		criterio->nombre = campo_nombre;
 				
 		do{
-			cout << "que valor tiene el campo(puntos): ";
+			cout << "Ponderacion (puntos): ";
 			cin >> valor;
 			valor = abs(valor);
 			if((contador + valor) > 100){
@@ -1211,12 +1211,12 @@ void alumnos::nuevoalumno(){
 	}while(caracter != 13 || dif > 14 || dif < 1);
 	
 	system("cls");
-	cout << "0. egresado\n1. baja adimistrativa\n2. activo\n3. art. 34\n4. art. 35\n" << endl;
+	cout << "0. Egresado\n1. Baja adimistrativa\n2. Activo\n3. Art. 34\n4. Art. 35\n" << endl;
 	do{
 		cout << "Situacion del alumno: "; cin >> situation;
 	}while(situation > 4 || situation < 0);
 	
-	cout << "datos recibidos" << endl;
+	cout << "Alumno Registrado satisfactoriamente" << endl;
 	//se crea el nodo alumno
 	nuevoal = new alumno;
 	nuevoal->codigo = cod;
@@ -1301,7 +1301,7 @@ void alumnos::loc(int n){
 			i++;
 		}//end while
 		if(i != n){
-			cout << "algo paso" << endl;
+			cout << "Error 404, system not found" << endl;
 		}else{
 			inspec(aux);
 		}

@@ -462,7 +462,7 @@ void incribir_alumno(int cu){
 }
 
 void modif_alumno(int){
-	cout <<"\nAqui se modifican datos del alumno\n";
+	cout <<"\nModificar Datos Alumnos\n";
 	getch();
 }
 
